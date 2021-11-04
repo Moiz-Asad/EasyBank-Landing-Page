@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 
 export const Nav = styled.nav`
-  background: "#DFD8CA";
+  background-color: "white";
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -59,9 +59,9 @@ export const NavBtn = styled.nav`
   
 export const NavBtnLink = styled(Link)`
   border-radius: 50px;
-  background: #2FDD92;
+  background: hsl(136, 65%, 51%);
   padding: 10px 22px;
-  color: #000000;
+  color: white;
   outline: none;
   border: none;
   cursor: pointer;

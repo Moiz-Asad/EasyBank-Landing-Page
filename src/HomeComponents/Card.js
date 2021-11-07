@@ -1,11 +1,12 @@
 import React from 'react';
-import { CardContainer, CardHeading, CardPara } from '../Pages/HomeElements';
+import { CardContainer, CardHeading, CardPara, ArticleHilight } from '../Pages/HomeElements';
 
 function Card(props) {
     return (
         <CardContainer>
             <img src={props.source} alt="Logos"/>
             <CardHeading>{props.heading}</CardHeading>
+            <ArticleHilight>{props.hilight}</ArticleHilight>
             <CardPara>{props.paragraph}</CardPara>
         </CardContainer>
     );

@@ -185,28 +185,13 @@ export const CardWrapper = styled.div`
         flex-direction: column;
     }
 `
-
-export const ArticleHeading  = styled.p`
-    font-size: 28px;
-    @media screen and (max-width:900px){
-        font-size: 26px;
-    }
+export const AHeading = styled.p`
+    padding-top: 2rem;
+    padding-left: 6rem;
+    font-size: 42px;
     @media screen and (max-width:675px){
+        padding-left: 0;
         text-align: center;
-        font-size: 20px;
-    }
-`
-export const ArticleHilight  = styled.p`
-    color: grey;
-`
-
-export const ArticlePara = styled.p`
-    font-size: 15px;
-    color: grey;
-    margin-bottom: 3rem;
-    @media screen and (max-width:675px){
-        text-align: center;
-        margin-bottom: 1rem;
     }
 `
 
@@ -215,9 +200,61 @@ export const ArticleWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
+    padding:  1rem 6rem 6rem;
     @media screen and (max-width:675px){
-        text-align: center;
+        width: auto;
+        padding: 0 4rem;
         flex-direction: column;
+        justify-content: center;
+        
+    }
+`
+
+export const ArticleContainer=styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    
+    @media screen and (max-width:1370px){
+        width: 200px;
+        padding-right: 6rem;
+    }
+    @media screen and (max-width:675px){
+        width: auto;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }    
+
+    
+`
+export const Imag = styled.img`
+    width: 280px;
+    height: 200px;
+    @media screen and (max-width:675px){
+        width: 80vw;
+    }    
+`
+export const ArticleHilight  = styled.p`
+    color: grey;
+    font-size: 12px;
+    @media screen and (max-width:675px){
+        padding: 0 1.5rem;
+    }
+`
+export const ArticleHeading=styled.p`
+    font-size: 18px;
+    &:hover{
+        color: hsl(136, 65%, 51%);
+    }
+    @media screen and (max-width:675px){
+        padding: 0 1.5rem;
+    }
+`
+
+export const ArticlePara=styled.p`
+    font-size: 14px;
+    color: grey;
+    @media screen and (max-width:675px){
+        padding: 0 1.5rem;
     }
 `

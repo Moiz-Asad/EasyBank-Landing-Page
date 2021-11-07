@@ -9,6 +9,7 @@ import Blog from './Pages/Blog';
 import Carrier from './Pages/Carrier';
 import Contact from './Pages/Contact';
 import FError from './Pages/FError.js';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/carrier' component={Carrier} />
         <Route path='/' component={FError} />
       </Switch>
+      <Footer/>
     </Router>
   );
 }

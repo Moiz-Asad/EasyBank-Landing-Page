@@ -19,7 +19,7 @@ function Footer() {
                     <NavLink to='#' activeStyle>
                         About Us
                     </NavLink>
-                    <NavLink to='/contact' activeStyle>
+                    <NavLink to='/EasyBank-Landing-Page/contact' activeStyle>
                         Contact
                     </NavLink>
                     <NavLink to='#' activeStyle>

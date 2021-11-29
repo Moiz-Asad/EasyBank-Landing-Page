@@ -13,9 +13,9 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/' component={FError} />
+        <Route path='/EasyBank-Landing-Page/' exact component={Home} />
+        <Route path='/EasyBank-Landing-Page/contact' component={Contact} />
+        <Route path='/EasyBank-Landing-Page/error' component={FError} />
       </Switch>
       <Footer/>
     </Router>

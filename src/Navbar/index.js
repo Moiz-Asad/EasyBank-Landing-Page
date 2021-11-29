@@ -20,13 +20,13 @@ const Navbar = () => {
 
         <Bars />
         <NavMenu>
-          <NavLink to='/' activeStyle>
+          <NavLink to='/EasyBank-Landing-Page/' activeStyle>
             Home
           </NavLink>
           <NavLink to='#' activeStyle>
             About
           </NavLink>
-          <NavLink to='/contact' activeStyle>
+          <NavLink to='/EasyBank-Landing-Page/contact' activeStyle>
             Contact
           </NavLink>
           <NavLink to='#' activeStyle>

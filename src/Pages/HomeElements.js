@@ -58,6 +58,7 @@ export const Para = styled.p`
     }
 `
 export const BtnContainer = styled.div`
+    padding: 1rem 0;
   @media screen and (max-width:675px){
         text-align: center;
     }
@@ -114,7 +115,7 @@ export const AContainer = styled.div`
     flex-direction: column;
     background: hsl(220, 16%, 96%);
     margin-top: -150px;
-
+    width: auto;
     @media screen and (max-width:1220px){
         margin-top: 0;
     }
@@ -175,15 +176,28 @@ export const CardPara = styled.p`
 `
 
 export const CardWrapper = styled.div`
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 1rem;
+align-items: center;
+padding:  1rem 6rem 6rem;
+transition: all ease 0.4s;
+@media screen and (max-width:675px){   
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4rem;
-    @media screen and (max-width:675px){
-        text-align: center;
-        flex-direction: column;
-    }
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transition: all ease 0.4s;
+}
+@media screen and (max-width:1380px){
+    grid-template-columns: repeat(3, 1fr);
+    transition: all ease 0.4s;
+}
+@media screen and (max-width:900px){
+    grid-template-columns: repeat(2, 1fr);
+    transition: all ease 0.4s;
+}
 `
 export const AHeading = styled.p`
     padding-top: 2rem;
@@ -196,17 +210,27 @@ export const AHeading = styled.p`
 `
 
 export const ArticleWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
     align-items: center;
     padding:  1rem 6rem 6rem;
-    @media screen and (max-width:675px){
-        width: auto;
-        padding: 0 4rem;
+    transition: all ease 0.4s;
+    @media screen and (max-width:675px){   
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        align-items:center;
+        transition: all ease 0.4s;
+    }
+    @media screen and (max-width:1380px){
+        grid-template-columns: repeat(3, 1fr);
+        transition: all ease 0.4s;
+    }
+    @media screen and (max-width:900px){
+        grid-template-columns: repeat(2, 1fr);
+        transition: all ease 0.4s;
     }
 `
 
@@ -260,27 +284,51 @@ export const ArticlePara=styled.p`
 `
 
 export const Form = styled.form`
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+    width: 60%;
 `; 
 export const Input = styled.input`
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     width: 50%;
 `; 
 export const Label = styled.label`
     width: 50%;
 `; 
 export const Textarea = styled.textarea`
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     width: 50%;
 `; 
 
-export const StyledButton = styled.button`
-    
-`; 
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 4rem 6rem;
+    height: 100vh;
+`
+export const ContactUi = styled.div`
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ErrorContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 `

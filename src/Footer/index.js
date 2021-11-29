@@ -16,16 +16,16 @@ function Footer() {
             </Sec1>
             <Sec2>
                 <NavMenu>
-                    <NavLink to='/about' activeStyle>
+                    <NavLink to='#' activeStyle>
                         About Us
                     </NavLink>
                     <NavLink to='/contact' activeStyle>
                         Contact
                     </NavLink>
-                    <NavLink to='/blog' activeStyle>
+                    <NavLink to='#' activeStyle>
                         Blog
                     </NavLink>
-                    <NavLink to='/carrier' activeStyle>
+                    <NavLink to='#' activeStyle>
                         Carrier
                     </NavLink>
                     <NavLink to='#' activeStyle>

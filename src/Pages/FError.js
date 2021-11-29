@@ -1,10 +1,10 @@
 import React from 'react'
-
+import {ErrorContainer} from './HomeElements';
 function FError() {
     return (
-        <div>
-            404 Error
-        </div>
+            <ErrorContainer>
+                <img src={require('../Assets/error.png').default} width={'600px'} height={'400px'} alt="Error404"/>
+            </ErrorContainer>
     )
 }
 

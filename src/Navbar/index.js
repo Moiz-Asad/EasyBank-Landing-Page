@@ -23,21 +23,21 @@ const Navbar = () => {
           <NavLink to='/' activeStyle>
             Home
           </NavLink>
-          <NavLink to='/about' activeStyle>
+          <NavLink to='#' activeStyle>
             About
           </NavLink>
           <NavLink to='/contact' activeStyle>
             Contact
           </NavLink>
-          <NavLink to='/blog' activeStyle>
+          <NavLink to='#' activeStyle>
             Blog
           </NavLink>
-          <NavLink to='/carrier' activeStyle>
+          <NavLink to='#' activeStyle>
             Carrier
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/request'>Request Invite</NavBtnLink>
+          <NavBtnLink to='#'>Request Invite</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

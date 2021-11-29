@@ -1,8 +1,11 @@
 import React from 'react'
-import {MainContainer,Form,Label,Input,Textarea,StyledButton} from './HomeElements';
+import {MainContainer,Form,Label,Input,Textarea,Btn, BtnContainer,ContactUi} from './HomeElements';
 function Contact() {
     return (
             <MainContainer>
+                <ContactUi>
+                    <img src={require('../Assets/contnt.png').default} style={{width:'500px'}} alt="Contact"/>
+                </ContactUi>
                 <Form>
 
                         <Label>Name</Label>
@@ -15,7 +18,7 @@ function Contact() {
                         <Input type="text" name="phone" />
                         <Label>Message</Label>
                         <Textarea name="message" rows="5"></Textarea>
-                        <StyledButton>Submit</StyledButton>
+                        <BtnContainer><Btn>Submit</Btn></BtnContainer>
                 </Form>
             </MainContainer>
     )

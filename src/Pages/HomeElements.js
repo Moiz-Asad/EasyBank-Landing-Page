@@ -258,3 +258,29 @@ export const ArticlePara=styled.p`
         padding: 0 1.5rem;
     }
 `
+
+export const Form = styled.form`
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+`; 
+export const Input = styled.input`
+    width: 50%;
+`; 
+export const Label = styled.label`
+    width: 50%;
+`; 
+export const Textarea = styled.textarea`
+    width: 50%;
+`; 
+
+export const StyledButton = styled.button`
+    
+`; 
+export const MainContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 6rem;
+`

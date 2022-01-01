@@ -1,15 +1,15 @@
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
 export const Nav = styled.nav`
   background-color: "white";
-  height: 85px;
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  padding: 2rem calc((100vw - 1000px) / 2);
   z-index: 12;
+  background-color: white;
 `;
   
 export const NavLink = styled(Link)`
@@ -18,7 +18,6 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
   &.active {
     color: #000000;
@@ -29,7 +28,7 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #808080;
   @media screen and (max-width: 768px) {
-    display: block;
+    display: ${props => props.trigger === true? "none":"flex"};
     position: absolute;
     top: 0;
     right: 0;
@@ -75,8 +74,34 @@ export const NavBtnLink = styled(Link)`
   }
 `
 export const ImageContainer = styled.div`
-  display: flex;
+  display: ${props => props.trigger === true? "none":"flex"};
   justify-content: center;
   align-items: center;
   padding-left: 1.5rem;
+`
+
+export const MobileBar = styled.div`
+  display: none;
+  background-color: white;
+  @media screen and (max-width: 768px) {
+    display: ${props => props.trigger === true? "flex":"none"};
+    width: 100%;
+    z-index: 20000;
+    padding: 0;
+    margin: 0;
+  }
+`
+export const MobileNavMenu = styled.div`
+  display: flex:
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20000; 
+  background-color: white;
+  @media screen and (min-width: 768px) {
+    display:none;
+  }
+`
+export const Close = styled(FaArrowAltCircleLeft)`
+  padding: auto;
 `
